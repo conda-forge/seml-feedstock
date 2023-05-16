@@ -1,11 +1,11 @@
-About seml
-==========
+About seml-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/seml-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/TUM-DAML/seml
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/seml-feedstock/blob/main/LICENSE.txt)
 
 Summary: Slurm Experiment Management Library
 
@@ -211,5 +211,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@n-gao](https://github.com/n-gao/)
 * [@siboehm](https://github.com/siboehm/)
 
