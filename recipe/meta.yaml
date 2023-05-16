@@ -1,5 +1,5 @@
 {% set name = "seml" %}
-{% set version = "0.3.5" %}
+{% set version = "0.3.7" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/seml-{{ version }}.tar.gz
-  sha256: 76bdeaae23057c1fb7c67fc4fa4802bce484df5af43703163472d66f34541427
+  sha256: 1aaca4a826674ee3a52fa3df22d700d8770a215569079b320915502b6254a488
 
 build:
   number: 2
@@ -22,16 +22,17 @@ requirements:
     - pip
     - python
   run:
-    - debugpy >=1.2.1
-    - jsonpickle >=1.2,<2.0
-    - munch >=2.0.4
-    - numpy >=1.15
+    - numpy >= 1.15
+    - pymongo >= 3.11
     - pandas
-    - pymongo >=3.7,<4.0
+    - sacred >= 0.8.4
+    - pyyaml >= 5.1
+    - jsonpickle >= 1.2, <2.0
+    - munch >= 2.0.4
+    - tqdm >= 4.36
+    - debugpy >= 1.2.1
+    - requests >= 2.28.1
     - python
-    - pyyaml >=5.1
-    - sacred >=0.8.1
-    - tqdm >=4.36
 
 test:
   imports:
@@ -51,3 +52,4 @@ about:
 extra:
   recipe-maintainers:
     - siboehm
+    - n-gao
