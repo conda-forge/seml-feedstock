@@ -11,7 +11,7 @@ source:
   sha256: cf71bb783908217dfce655371857eb0cc5cd25f0ceba26abce8c0327aed52763
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win]
   entry_points:
     - seml = seml.__main__:main
@@ -35,7 +35,7 @@ requirements:
     - typer >=0.9
     - rich >=13.0
     - omegaconf >=2.3.0
-    - typing_extension
+    - typing_extensions
     - python
 
 test:
