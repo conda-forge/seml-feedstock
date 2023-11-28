@@ -1,5 +1,5 @@
 {% set name = "seml" %}
-{% set version = "0.3.7" %}
+{% set version = "0.4.0" %}
 
 
 package:
@@ -8,13 +8,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/seml-{{ version }}.tar.gz
-  sha256: 1aaca4a826674ee3a52fa3df22d700d8770a215569079b320915502b6254a488
+  sha256: cf71bb783908217dfce655371857eb0cc5cd25f0ceba26abce8c0327aed52763
 
 build:
   number: 1
   skip: true  # [win]
   entry_points:
-    - seml = seml.main:main
+    - seml = seml.__main__:main
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -27,11 +27,15 @@ requirements:
     - pandas
     - sacred >=0.8.4
     - pyyaml >=5.1
-    - jsonpickle >=1.2,<2.0
+    - jsonpickle >=2.2
     - munch >=2.0.4
     - tqdm >=4.36
     - debugpy >=1.2.1
     - requests >=2.28.1
+    - typer >=0.9
+    - rich >=13.0
+    - omegaconf >=2.3.0
+    - typing_extensions
     - python
 
 test:
