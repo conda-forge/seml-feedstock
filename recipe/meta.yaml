@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/seml-{{ version }}.tar.gz
-  sha256: cf71bb783908217dfce655371857eb0cc5cd25f0ceba26abce8c0327aed52763
+  sha256: c7f18717ed2c4e401bee0cb531c28022ab250ecc106967783e6604e450de714f
 
 build:
   number: 0
