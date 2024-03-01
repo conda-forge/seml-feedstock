@@ -35,6 +35,7 @@ requirements:
     - typer >=0.9
     - rich >=13.0
     - omegaconf >=2.3.0
+    - gitignore_parser >=0.1.11
     - typing_extensions
     - python
 
