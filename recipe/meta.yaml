@@ -1,5 +1,5 @@
 {% set name = "seml" %}
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/seml-{{ version }}.tar.gz
-  sha256: 0561cf1955a4e3b68628f0c37be7b154edb25891c46fafed26e592d6f40d45c7
+  sha256: 8f4662cf67f1e9f320dad4a6b96adc24bbc22d4bbc4fec6ec06ea8ce7b764a2a
 
 build:
   number: 0
@@ -29,12 +29,12 @@ requirements:
     - pyyaml >=5.1
     - jsonpickle >=2.2
     - munch >=2.0.4
-    - tqdm >=4.36
     - debugpy >=1.2.1
     - requests >=2.28.1
     - typer >=0.9
     - rich >=13.0
     - omegaconf >=2.3.0
+    - gitignore_parser >=0.1.11
     - typing_extensions
     - python
 
