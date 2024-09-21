@@ -11,7 +11,7 @@ source:
   sha256: 0561cf1955a4e3b68628f0c37be7b154edb25891c46fafed26e592d6f40d45c7
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   entry_points:
     - seml = seml.__main__:main
