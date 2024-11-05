@@ -1,5 +1,5 @@
 {% set name = "seml" %}
-{% set version = "0.4.2" %}
+{% set version = "0.4.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/seml-{{ version }}.tar.gz
-  sha256: 0561cf1955a4e3b68628f0c37be7b154edb25891c46fafed26e592d6f40d45c7
+  sha256: 874e46be6c1f6b7bd24f51b82f39c467b6e078a4429f4e0ba8fe24e2cd7a3138
 
 build:
   number: 0
